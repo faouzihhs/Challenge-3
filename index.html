@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>SpaceX | Landing Dashboard</title>
+    <meta name="viewport" content="initial-scale=1,maximum-scale=1,user-scalable=no" />
+    <!--  mapbox-gl  -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.js"></script>
+    <link href="https://api.mapbox.com/mapbox-gl-js/v1.9.0/mapbox-gl.css" rel="stylesheet" />
+    <!--  mapbox-gl-geocoder  -->
+    <script src="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.min.js"></script>
+    <link rel="stylesheet" href="https://api.mapbox.com/mapbox-gl-js/plugins/mapbox-gl-geocoder/v4.4.2/mapbox-gl-geocoder.css" type="text/css"/>
+    <!--  locals script and css  -->
+    <script src="js/main.js" defer></script>
+    <link rel="stylesheet" href="css/main.css">
+</head>
+<body>
+
+    <!-- Navigation Bar -->
+    <div class="nav-bar">
+        <div><b>SPACEX</b> LANDING DASHBOARD</div>
+    </div>
+
+    <!--  Side menu  -->
+    <div class="side-menu">
+        <!--  geocoder container wat onzichtbaar is, wordt gebruikt om te zoeken maar blijft ontzichtbaar  -->
+        <div id="geocoder"></div>
+
+        <!--  Search box  -->
+        <div class="search">
+            <input id="search" type="text" placeholder="Landingsplek zoeken (Land)" autofocus>
+        </div>
+
+        <!--  Details over het gezochte land  -->
+        <div class="details">
+            <div>
+                <p>Land</p>
+                <h3 id="country">Netherlands</h3>
+            </div>
+            <div>
+                <p>Hoofdstad</p>
+                <h3 id="capital">Amsterdam</h3>
+            </div>
+            <div>
+                <p>Populatie</p>
+                <h3 id="population">5.000.000</h3>
+            </div>
+            <div>
+                <p>Taal</p>
+                <h3 id="language">Dutch</h3>
+            </div>
+            <div>
+                <p>Valuta</p>
+                <h3 id="currency">EURO</h3>
+            </div>
+        </div>
+
+        <!--  Weer voor het gezochte land  -->
+        <div class="weather">
+            <div><h1 id="temp">17 C</h1></div>
+            <div><img id="icon" src="http://openweathermap.org/img/w/04n.png" alt=""/></div>
+        </div>
+    </div>
+
+    <!--  Map wrapper  -->
+    <div class="map" id="map"></div>
+</body>
+</html>
