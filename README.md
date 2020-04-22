@@ -2,8 +2,8 @@
 Faouzi Khattach 18065333
 
 # Challenge 3
-Link naar het digitale klok:  <br>
-Link naar wireframes: 
+Link naar het API Dashboard: https://faouzihhs.github.io/Challenge-3/ <br>
+Link naar wireframes: https://drive.google.com/drive/folders/1UVKv8-SXnCof4Gk5z2oySqjYPqsp2CMx?usp=sharing
 
 # Onderbouwing
 Ik heb gekozen om een dashboard te maken met 3 api's. De eerste API is mapbox om de wereldkaart te laten zien. De tweede API is openweathermap die de temperatuur laat zien in celsius van een land. De derde API die ik heb gebruikt is Restcountries die verschillende soorten data laat zien van een land zoals: de hoofdstad, valuta, taal etc.
